@@ -13,7 +13,7 @@ public class DeveloperService {
         return (ArrayList) DeveloperRepo.getDevelopersList().stream().filter(e -> e.getDepartment().equalsIgnoreCase("java")).collect(Collectors.toList());
     }
 
-    public ArrayList<Developer> getdotNetDevelopers() {
+    public ArrayList<Developer> getDotNetDevelopers() {
         return (ArrayList) DeveloperRepo.getDevelopersList().stream().filter(e -> e.getDepartment().equalsIgnoreCase(".net")).collect(Collectors.toList());
     }
 

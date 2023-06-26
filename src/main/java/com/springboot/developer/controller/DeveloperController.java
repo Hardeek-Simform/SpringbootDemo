@@ -28,7 +28,7 @@ public class DeveloperController {
 
     @GetMapping("/dotNet")
     public ArrayList<Developer> dotNetDevelopersList() {
-        return developerService.getdotNetDevelopers();
+        return developerService.getDotNetDevelopers();
     }
 
     @GetMapping("/angular")
