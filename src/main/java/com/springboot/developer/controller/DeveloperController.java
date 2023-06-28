@@ -16,7 +16,7 @@ public class DeveloperController {
     @Autowired
     DeveloperService developerService;
 
-    @GetMapping("/all")
+    @GetMapping
     public ArrayList<Developer> allDevelopersList() {
         return developerService.getAllDevelopers();
     }
